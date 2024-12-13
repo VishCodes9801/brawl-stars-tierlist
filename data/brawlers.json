@@ -1,0 +1,36 @@
+{
+    "Common": ["Shelly"],
+    "Rare": [
+        "Brock", "Bull", "Colt", "Barley", 
+        "El Primo", "Poco", "Rosa", "Nita"
+    ],
+    "Super-Rare": [
+        "Rico", "Darryl", "Penny", "Carl", 
+        "Jacky", "Gus", "8-Bit", "Tick", 
+        "Dynamike", "Jessie"
+    ],
+    "Epic": [
+        "Piper", "Pam", "Frank", "Bibi", 
+        "Bea", "Nani", "Edgar", "Griff", 
+        "Grom", "Bonnie", "Sam", "Meeple", 
+        "Shade", "Berry", "Angelo", "Larry & Lawrie", 
+        "Pearl", "Hank", "Maisie", "Mandy", 
+        "Bo", "Emz", "Stu", "Belle", 
+        "Ash", "Lola", "Colette", "Gale"
+    ],
+    "Mythic": [
+        "Mortis", "Tara", "Gene", "Max", 
+        "Mr. P", "Sprout", "Byron", "Squeak", 
+        "Eve", "Janet", "Otis", "Juju", 
+        "Moe", "Clancy", "Lily", "Melodie", 
+        "Mico", "Charlie", "Chuck", "Doug", 
+        "Willow", "R-T", "Gray", "Buster", 
+        "Buzz", "Ruffs", "Lou", "Fang"
+    ],
+    "Legendary": [
+        "Spike", "Crow", "Leon", "Sandy", 
+        "Amber", "Meg", "Chester", "Buzz Lightyear", 
+        "Kenji", "Draco", "Kit", "Cordelius", 
+        "Surge"
+    ]
+}

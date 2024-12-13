@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'">
+    <title>Brawl Stars Tier List Maker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Brawl Stars Tier List Maker</h1>
+    </header>
+
+    <main>
+        <div class="rarity-legend">
+            <div class="rarity-item Common">Common</div>
+            <div class="rarity-item Rare">Rare</div>
+            <div class="rarity-item Super-Rare">Super Rare</div>
+            <div class="rarity-item Epic">Epic</div>
+            <div class="rarity-item Mythic">Mythic</div>
+            <div class="rarity-item Legendary">Legendary</div>
+        </div>
+
+        <div class="tier-list">
+            <div class="tier-row">
+                <div class="tier-label S">S</div>
+                <div class="tier-content" data-tier="S"></div>
+            </div>
+            <div class="tier-row">
+                <div class="tier-label A">A</div>
+                <div class="tier-content" data-tier="A"></div>
+            </div>
+            <div class="tier-row">
+                <div class="tier-label B">B</div>
+                <div class="tier-content" data-tier="B"></div>
+            </div>
+            <div class="tier-row">
+                <div class="tier-label C">C</div>
+                <div class="tier-content" data-tier="C"></div>
+            </div>
+            <div class="tier-row">
+                <div class="tier-label D">D</div>
+                <div class="tier-content" data-tier="D"></div>
+            </div>
+        </div>
+
+        <div id="character-pool"></div>
+
+        <div class="button-container">
+            <button class="button save" id="saveButton">Save Tier List</button>
+            <button class="button load" id="loadButton">Load Tier List</button>
+            <button class="button share" id="shareButton">Share Tier List</button>
+            <button class="button reset" id="resetButton">Reset</button>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="saveModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Save Tier List</h2>
+            <input type="text" id="saveNameInput" placeholder="Enter a name for your tier list">
+            <button class="button save">Save</button>
+        </div>
+    </div>
+
+    <div id="loadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Load Tier List</h2>
+            <div id="savedLists" class="saved-list"></div>
+        </div>
+    </div>
+
+    <div id="shareModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Share Tier List</h2>
+            <input type="text" id="shareLink" readonly>
+            <button class="copy-button">Copy Link</button>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/sharing.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Tier List Styles */
+.tier-row {
+    display: flex;
+    margin-bottom: 10px;
+    min-height: 80px;
+    background: #2d2d2d;
+    border-radius: 8px;
+}
+
+.tier-label {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tier-content {
+    flex-grow: 1;
+    padding: 10px;
+    min-height: 80px;
+    border-left: 2px solid #404040;
+}
+
+/* Tier Colors */
+.S { background-color: #FF7F7F; }
+.A { background-color: #FFBF7F; }
+.B { background-color: #FFFF7F; }
+.C { background-color: #7FFF7F; }
+.D { background-color: #7FBFFF; }
+
+/* Character Styles */
+.character {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: move;
+    border-radius: 4px;
+    user-select: none;
+    font-size: 12px;
+    text-align: center;
+    word-break: break-word;
+}
+
+/* Rarity Colors */
+.Common { background-color: #b8b8b8; }
+.Rare { background-color: #4de94c; }
+.Super-Rare { background-color: #4c92e9; }
+.Epic { background-color: #b54ce9; }
+.Mythic { background-color: #e94c4c; }
+.Legendary { background-color: #ffd700; color: black; }
+
+/* Character Pool */
+#character-pool {
+    margin-top: 20px;
+    padding: 20px;
+    background: #2d2d2d;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+/* Button Styles */
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.save { background-color: #4CAF50; }
+.button.load { background-color: #2196F3; }
+.button.share { background-color: #9c27b0; }
+.button.reset { background-color: #f44336; }
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #2d2d2d;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #fff;
+}
+
+/* Form Elements */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #1a1a1a;
+    border: 1px solid #404040;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Rarity Legend */
+.rarity-legend {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.rarity-item {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Dragging State */
+.dragging {
+    opacity: 0.5;
+}
